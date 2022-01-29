@@ -9,7 +9,7 @@ public class Morte : MonoBehaviour
       public Animator MortePlayer;
   void OnTriggerEnter(Collider col)
   {
-             if(col.gameObject.CompareTag("Player"))
+             if(col.gameObject.layer == 3)
         {
               
               SceneManager.LoadScene(1);
